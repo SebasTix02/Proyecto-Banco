@@ -24,11 +24,10 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/credito.css">
+
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
-
 <body>
     <!-- header-start -->
     <header>
@@ -90,71 +89,53 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
-                        <h3>Solicita tu credito Yá!</h3>
+                        <h3>Invierte ahora!</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--/ bradcam_area  -->
-    
-    <!-- Área del formulario -->
-<div class="apply_form_area">
+    <!-- works_area_start -->
+<div class="works_area" style="background-color: #f9f9f9; padding: 60px 0;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <form id="creditForm" class="apply_form">
-                    <div class="apply_info_text text-center">
-                        <h3>Simulador de Créditos</h3>
-                        <p>Calcula tu tabla de amortización según el tipo de crédito y sistema de pago.</p>
+                <form id="investmentForm" class="apply_form" style="background-color: #ffffff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); padding: 40px;">
+                    <div class="apply_info_text text-center" style="margin-bottom: 30px;">
+                        <h3 style="color: #333; font-weight: 700;">Simulador de Inversiones con Interés Simple</h3>
+                        <p style="color: #555;">Calcula el interés simple según el monto a ingresar, tus posibles años de inversión y la tasa de retorno que buscas.</p>
                     </div>
 
-                    <div class="single_field">
-                        <label for="amount">Monto del Préstamo:</label>
-                        <input type="number" id="amount" placeholder="Ingrese el monto" required min="0" step="0.01" aria-label="Monto del Préstamo">
+                    <div class="single_field" style="margin-bottom: 25px;">
+                        <label for="investmentAmount" style="font-weight: 600; color: #555;">Monto a Invertir:</label>
+                        <input type="number" id="investmentAmount" placeholder="Ingrese el monto" required min="0" step="0.01" aria-label="Monto a Invertir" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px;"/>
                     </div>
 
-                    <div class="single_field">
-                        <label for="years">Años a Pagar:</label>
-                        <input type="number" id="years" placeholder="Ingrese los años" required min="1" aria-label="Años a Pagar">
+                    <div class="single_field" style="margin-bottom: 25px;">
+                        <label for="investmentYears" style="font-weight: 600; color: #555;">Años de Inversión:</label>
+                        <input type="number" id="investmentYears" placeholder="Ingrese los años" required min="1" aria-label="Años de Inversión" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px;"/>
                     </div>
 
-                    <div class="single_field">
-                        <label for="creditType">Tipo de Crédito (Tasa de Interés):</label>
-                        <select id="creditType" class="wide" required aria-label="Tipo de Crédito">
-                            <option value="0.05">Personal - 5%</option>
-                            <option value="0.03">Hipotecario - 3%</option>
-                            <option value="0.08">Vehículo - 8%</option>
-                        </select>
+                    <div class="single_field" style="margin-bottom: 25px;">
+                        <label for="interestRate" style="font-weight: 600; color: #555;">Tasa de Retorno (%):</label>
+                        <input type="number" id="interestRate" value="5" required min="0" step="0.01" aria-label="Tasa de Retorno" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px;"/>
                     </div>
 
-                    <div class="single_field">
-                        <label for="system">Sistema de Amortización:</label>
-                        <select id="system" class="wide" required aria-label="Sistema de Amortización">
-                            <option value="frances">Francés</option>
-                            <option value="aleman">Alemán</option>
-                        </select>
-                    </div>
-
-                    <div class="submit_btn">
-                        <button type="button" class="boxed-btn3" onclick="generateAmortizationTable()">Calcular Tabla de Amortización</button>
+                    <div class="submit_btn" style="text-align: center; margin-top: 30px;">
+                        <button type="button" class="boxed-btn3" onclick="calculateSimpleInterest()" style="background-color: #28a745; color: white; padding: 14px 24px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px;">
+                            Calcular Interés
+                        </button>
                     </div>
                 </form>
 
+                <div id="resultContainer" class="text-center mt-4" style="margin-top: 40px;"></div>
             </div>
         </div>
     </div>
 </div>
-
-    <!-- Modal para la Tabla de Amortización -->
-<div id="amortizationModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal()">&times;</span>
-        <div id="tableContainer" class="modal-table-content"></div>
-        <button id="downloadPdf" onclick="downloadPDF()">Descargar PDF</button>
-    </div>
-</div>
-
+<!-- works_area_end -->
+    
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
@@ -267,7 +248,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="./modulo1.js"></script>
+    <script src="./modulo2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 
 
