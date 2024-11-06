@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Finloans</title>
+    <title>NeoBank</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -64,7 +64,7 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="phone_num d-none d-xl-block">
-                                        <a href="#"> <i class="fa fa-phone"></i> +593 983098745</a>
+                                        <a href="#"> <i class="fa fa-phone"></i> +593 998574586</a>
                                     </div>
                                     <div class="d-none d-lg-block">
                                         <a class="boxed-btn4" href="apply.html">Solicite un Prestamo</a>
@@ -149,9 +149,9 @@
                                 </a>
                             </div>
                             <p>
-                                finloan@support.com <br>
-                                +10 873 672 6782 <br>
-                                600/D, Green road, NewYork
+                                NeoBank@support.com <br>
+                                +593 998574586 <br>
+                                Av. los chásquis, Ambato 180207
                             </p>
                             <div class="socail_links">
                                 <ul>
@@ -183,10 +183,10 @@
                     <div class="col-xl-2 col-md-6 col-lg-3">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
                             <h3 class="footer_title">
-                                Services
+                                información
                             </h3>
                             <ul>
-                                <li><a href="#">SEO/SEM </a></li>  
+                                <li><a href="./loan.html">Créditos</a></li>  
                             </ul>
 
                         </div>
@@ -194,29 +194,49 @@
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
                             <h3 class="footer_title">
-                                Useful Links
+                                Apartados
                             </h3>
                             <ul>
-                                    <li><a href="./about.html">Sobre Nosotros</a></li>
+                                  <li><a href="./about.html">Sobre Nosotros</a></li>
                                 <li><a href="./Loan.html">Prestamos</a></li>
-                                <li><a href="./contact.html"> Contact</a></li>
-                                <li><a href="#">Support</a></li>
+                                <li><a href="./inversion.html">Inversiones</a></li>
+                                <li><a href="./contact.html"> Contacto</a></li>
+                                <li><a href="#">Soporte</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 col-lg-4">
                         <div class="footer_widget wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".6s">
                             <h3 class="footer_title">
-                                Subscribe
+                                Subscribirse
                             </h3>
-                            <form action="#" class="newsletter_form">
-                                <input type="text" placeholder="Enter your mail">
-                                <button type="submit">Subscribe</button>
+                            <form id="newsletterForm" action="#" class="newsletter_form" onsubmit="return sendEmail()">
+                                <input type="email" id="emailInput" placeholder="Ingrese su email" required>
+                                <button type="submit">Enviar</button>
                             </form>
-                            <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems
-                                luckily.</p>
+                            <p id="newsletterMessage" class="newsletter_text" style="display:none;">Email enviado con éxito!</p>
                         </div>
                     </div>
+                    
+                    <script>
+                        function sendEmail() {
+                            // Evitar que el formulario se envíe de manera tradicional
+                            event.preventDefault();
+                    
+                            // Obtener el valor del campo de entrada de email
+                            var email = document.getElementById('emailInput').value;
+                    
+                            // Validar que el campo no esté vacío
+                            if (email !== "") {
+                                // Mostrar el mensaje de éxito
+                                document.getElementById('newsletterMessage').style.display = "block";
+                    
+                                // Opcional: Limpiar el campo de entrada
+                                document.getElementById('emailInput').value = "";
+                            }
+                        }
+                    </script>
+                    
                 </div>
             </div>
         </div>

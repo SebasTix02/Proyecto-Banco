@@ -1,18 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Finloans</title>
+    <title>NeoBank</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
 
-    <!-- CSS here -->
+    <!-- CSS aquí -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -25,24 +23,20 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-    <!-- header-start -->
+    <!-- Header -->
     <header>
-        <div class="header-area ">
+        <div class="header-area">
             <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid ">
+                <div class="container-fluid">
                     <div class="header_bottom_border">
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo.png" alt="">
+                                        <img src="img/logo.png" alt="NeoBank">
                                     </a>
                                 </div>
                             </div>
@@ -51,9 +45,9 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">Inicio</a></li>
-                                            <li><a href="Loan.html">Prestamos</a></li>
+                                            <li><a href="Loan.html">Préstamos</a></li>
                                             <li><a href="about.html">Acerca de</a></li>
-                                            <li><a href="#">servicios <i class="ti-angle-down"></i></a>
+                                            <li><a href="#">Servicios <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                     <li><a href="apply.html">Solicitar préstamo</a></li>
                                                     <li><a href="inversion.html">Inversiones</a></li>
@@ -67,15 +61,12 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="phone_num d-none d-xl-block">
-                                        <a href="#"> <i class="fa fa-phone"></i> +593 983098745</a>
+                                        <a href="#"> <i class="fa fa-phone"></i> +593 998574586 </a>
                                     </div>
                                     <div class="d-none d-lg-block">
-                                        <a class="boxed-btn4" href="apply.html">Solicite un Prestamo</a>
+                                        <a class="boxed-btn4" href="apply.html">Solicitar un Préstamo</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
                         </div>
                     </div>
@@ -84,202 +75,246 @@
             </div>
         </div>
     </header>
-    <!-- header-end -->
-  
-      <!-- bradcam_area  -->
-      <div class="bradcam_area bradcam_bg_3">
+    <!-- Header End -->
+
+    <!-- Bradcam Area -->
+    <div class="bradcam_area bradcam_bg_3">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
-                        <h3>Contact us</h3>
+                        <h3>Contáctanos</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--/ bradcam_area  -->
-  <!-- ================ contact section start ================= -->
-  <section class="contact-section section_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="contact-title">Get in Touch</h2>
-        </div>
-        <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+    <!-- Bradcam Area End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact-section section_padding">
+        <div class="container">
             <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                  
-                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder = 'Enter Message'></textarea>
+                <div class="col-12">
+                    <h2 class="contact-title">Ponte en Contacto</h2>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Enter your name'>
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" action="#" method="post" id="contactForm" novalidate="novalidate" onsubmit="return sendContactForm()">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa tu mensaje'" placeholder="Ingresa tu mensaje"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa tu nombre'" placeholder="Ingresa tu nombre">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa tu correo electrónico'" placeholder="Ingresa tu correo electrónico">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa el asunto'" placeholder="Ingresa el asunto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="button button-contactForm btn_4 boxed-btn">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                    
+                    <p id="contactMessage" class="newsletter_text" style="display:none;">¡Email enviado con éxito!</p>
+                    
+                    <script>
+                        function sendContactForm() {
+                            // Evitar el envío del formulario tradicional
+                            event.preventDefault();
+                    
+                            // Validar si todos los campos del formulario están completos
+                            var name = document.getElementById('name').value;
+                            var email = document.getElementById('email').value;
+                            var message = document.getElementById('message').value;
+                            var subject = document.getElementById('subject').value;
+                    
+                            // Asegurarse de que los campos no estén vacíos
+                            if (name !== "" && email !== "" && message !== "" && subject !== "") {
+                                // Mostrar el mensaje de éxito
+                                document.getElementById('contactMessage').style.display = "block";
+                    
+                                // Limpiar los campos del formulario después de enviarlo (opcional)
+                                document.getElementById('name').value = "";
+                                document.getElementById('email').value = "";
+                                document.getElementById('message').value = "";
+                                document.getElementById('subject').value = "";
+                    
+                                // Aquí puedes agregar una solicitud para enviar los datos a tu servidor (contact_process.php)
+                                // Ejemplo usando AJAX o Fetch API para hacer el envío sin recargar la página
+                            } else {
+                                // Si algún campo está vacío, puedes mostrar un mensaje de error
+                                alert("Por favor, completa todos los campos.");
+                            }
+                    
+                            // Retorna false para evitar que el formulario se envíe de manera tradicional
+                            return false;
+                        }
+                    </script>
+                    
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Enter email address'>
+                <div class="col-lg-4">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3>Ambato, Tungurahua</h3>
+                            <p>Av. los chásquis</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3>+593 998574586 </h3>
+                            <p>Lunes a Viernes, de 8am a 5pm</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3>soporte@neobank.com</h3>
+                            <p>¡Envíanos tu consulta en cualquier momento!</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder = 'Enter Subject'>
-                </div>
-              </div>
             </div>
-            <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send Message</button>
+
+            <!-- Mapa con la dirección especificada -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h4>Encuéntranos Aquí</h4>
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <!-- Mapa de OpenStreetMap con la dirección específica -->
+                            <iframe width="100%" height="500" frameborder="0" style="border:0" 
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=-78.614211%2C-1.254374%2C-78.610211%2C-1.250374&layer=mapnik" 
+                                scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </form>
         </div>
-        <div class="col-lg-4">
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-home"></i></span>
-            <div class="media-body">
-              <h3>Buttonwood, California.</h3>
-              <p>Rosemead, CA 91770</p>
+    </section>
+    <!-- Contact Section End -->
+
+   <!-- footer start -->
+   <footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-3">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="img/footer_logo.png" alt="">
+                            </a>
+                        </div>
+                        <p>
+                            NeoBank@support.com <br>
+                            +593 998574586 <br>
+                            Av. los chásquis, Ambato 180207
+                        </p>
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-3">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
+                        <h3 class="footer_title">
+                            información
+                        </h3>
+                        <ul>
+                            <li><a href="./loan.html">Créditos</a></li>  
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
+                        <h3 class="footer_title">
+                            Apartados
+                        </h3>
+                        <ul>
+                              <li><a href="./about.html">Sobre Nosotros</a></li>
+                            <li><a href="./Loan.html">Prestamos</a></li>
+                            <li><a href="./inversion.html">Inversiones</a></li>
+                            <li><a href="./contact.html"> Contacto</a></li>
+                            <li><a href="#">Soporte</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".6s">
+                        <h3 class="footer_title">
+                            Subscribirse
+                        </h3>
+                        <form id="newsletterForm" action="#" class="newsletter_form" onsubmit="return sendEmail()">
+                            <input type="email" id="emailInput" placeholder="Ingrese su email" required>
+                            <button type="submit">Enviar</button>
+                        </form>
+                        <p id="newsletterMessage" class="newsletter_text" style="display:none;">Email enviado con éxito!</p>
+                    </div>
+                </div>
+                
+                <script>
+                    function sendEmail() {
+                        // Evitar que el formulario se envíe de manera tradicional
+                        event.preventDefault();
+                
+                        // Obtener el valor del campo de entrada de email
+                        var email = document.getElementById('emailInput').value;
+                
+                        // Validar que el campo no esté vacío
+                        if (email !== "") {
+                            // Mostrar el mensaje de éxito
+                            document.getElementById('newsletterMessage').style.display = "block";
+                
+                            // Opcional: Limpiar el campo de entrada
+                            document.getElementById('emailInput').value = "";
+                        }
+                    }
+                </script>
+                
             </div>
-          </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-            <div class="media-body">
-              <h3>00 (440) 9865 562</h3>
-              <p>Mon to Fri 9am to 6pm</p>
-            </div>
-          </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-email"></i></span>
-            <div class="media-body">
-              <h3>support@colorlib.com</h3>
-              <p>Send us your query anytime!</p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </section>
-  <!-- ================ contact section end ================= -->
-    <!-- footer start -->
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-md-6 col-lg-3">
-                        <div class="footer_widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                            <div class="footer_logo">
-                                <a href="#">
-                                    <img src="img/footer_logo.png" alt="">
-                                </a>
-                            </div>
-                            <p>
-                                finloan@support.com <br>
-                                +10 873 672 6782 <br>
-                                600/D, Green road, NewYork
-                            </p>
-                            <div class="socail_links">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-google-plus"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+     
+</footer>
+<!--/ footer end  -->
 
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-lg-3">
-                        <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
-                            <h3 class="footer_title">
-                                Services
-                            </h3>
-                            <ul>
-                                <li><a href="#">SEO/SEM </a></li>  
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-lg-2">
-                        <div class="footer_widget wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
-                            <h3 class="footer_title">
-                                Useful Links
-                            </h3>
-                            <ul>
-                                    <li><a href="./about.html">Sobre Nosotros</a></li>
-                                <li><a href="./Loan.html">Prestamos</a></li>
-                                <li><a href="./contact.html"> Contact</a></li>
-                                <li><a href="#">Support</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 col-lg-4">
-                        <div class="footer_widget wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".6s">
-                            <h3 class="footer_title">
-                                Subscribe
-                            </h3>
-                            <form action="#" class="newsletter_form">
-                                <input type="text" placeholder="Enter your mail">
-                                <button type="submit">Subscribe</button>
-                            </form>
-                            <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems
-                                luckily.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         
-    </footer>
-    <!--/ footer end  -->
-
-
-  <!-- JS here -->
-  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-  <script src="js/vendor/jquery-1.12.4.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script src="js/ajax-form.js"></script>
-  <script src="js/waypoints.min.js"></script>
-  <script src="js/jquery.counterup.min.js"></script>
-  <script src="js/imagesloaded.pkgd.min.js"></script>
-  <script src="js/scrollIt.js"></script>
-  <script src="js/jquery.scrollUp.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/nice-select.min.js"></script>
-  <script src="js/jquery.slicknav.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/gijgo.min.js"></script>
-
-  <!--contact js-->
-  <script src="js/contact.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="js/jquery.form.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/mail-script.js"></script>
-
-  <script src="js/main.js"></script>
 </body>
 
 </html>
