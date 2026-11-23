@@ -1,5 +1,5 @@
 # Proyecto Banco
-Simulador de créditos y amortización
+Simulador de créditos y amortización.
 
 ## Descripción del Proyecto
 
