@@ -3,7 +3,7 @@ Simulador de créditos y amortización.
 
 ## Descripción del Proyecto
 
-**Proyecto Banco** es una página web sencilla y estática que simula los servicios de un **banco ficticio**. Esta página está diseñada para mostrar a los usuarios las funcionalidades básicas que un banco podría ofrecer, como la simulación de créditos y el cálculo de amortizaciones basadas en tarifas preestablecidas
+**Proyecto Banco** es una página web sencilla y estática que simula los servicios de un **banco ficticio**. Esta página está diseñada para mostrar a los usuarios las funcionalidades básicas que un banco podría ofrecer, como la simulación de créditos y el cálculo de amortizaciones basadas en tarifas preestablecidas.
 
 El objetivo de este proyecto es proporcionar una plantilla para una **aplicación bancaria sencilla**, donde los usuarios puedan ver de forma clara y directa las simulaciones de créditos y sus respectivas amortizaciones, sin la necesidad de realizar cálculos manuales.
 
